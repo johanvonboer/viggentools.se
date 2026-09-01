@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: viggentools-web
+    container_name: viggentools
+    ports:
+      - "${HTTP_PORT:-8080}:80"
+    restart: unless-stopped

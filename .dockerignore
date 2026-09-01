@@ -1,0 +1,13 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+compose.yml
+docker-compose.yml
+README.md
+*.md
+bin
+elint
+dist.js.map
+package-lock.json
+node_modules
