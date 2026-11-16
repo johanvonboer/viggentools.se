@@ -2,7 +2,8 @@
 FROM nginx:1.27-alpine
 
 # Site content (only what the site actually needs)
-COPY index.html dist.js /usr/share/nginx/html/
+# favicon.ico is drawn from favicon.svg, which stays out of the image
+COPY index.html dist.js favicon.ico /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
 COPY css/    /usr/share/nginx/html/css/
 COPY js/     /usr/share/nginx/html/js/
