@@ -1,5 +1,5 @@
 # Static site served by nginx
-FROM nginx:1.27-alpine
+FROM nginx:1.30-alpine
 
 # Site content (only what the site actually needs)
 # favicon.ico is drawn from favicon.svg, which stays out of the image
